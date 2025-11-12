@@ -1,0 +1,5 @@
+{
+  "name": "Pokémon Generation & Collection",
+  "description": "An interactive application for generating, collecting, and managing unique Pokémon, featuring a token-based economy and local data persistence.",
+  "requestFramePermissions": []
+}

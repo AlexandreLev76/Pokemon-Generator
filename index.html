@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Generation & Collection</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        margin: 0;
+        font-family: sans-serif;
+        background-color: #f0f2f5;
+      }
+      #root {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      /* Custom markdown styles for prose */
+      .prose img {
+        display: inline-block; /* Adjust if needed for block images */
+        max-width: 100%;
+        height: auto;
+      }
+      /* Accessibility: Skip to Content link */
+      .skip-link {
+        position: absolute;
+        top: -40px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #007bff;
+        color: white;
+        padding: 8px 16px;
+        z-index: 9999;
+        border-radius: 0 0 8px 8px;
+        text-decoration: none;
+        transition: top 0.3s ease-in-out;
+      }
+      .skip-link:focus {
+        top: 0;
+        outline: 2px solid #007bff;
+        outline-offset: 2px;
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.553.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "remark-gfm": "https://aistudiocdn.com/remark-gfm@^4.0.1",
+    "uuid": "https://aistudiocdn.com/uuid@^13.0.0",
+    "react-markdown": "https://aistudiocdn.com/react-markdown@^10.1.0"
+  }
+}
+</script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
